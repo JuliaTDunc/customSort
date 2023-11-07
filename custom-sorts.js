@@ -43,7 +43,7 @@ function frequencySort(arr) {
 
 
 }
-//1(yes swap)..later down the left
+//1(yes swap)..closer to the right
 //-1(same).. closer to the left
 
 module.exports = [
