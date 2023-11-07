@@ -27,6 +27,14 @@ function reverseBaseSort(arr) {
 }
 
 function frequencySort(arr) {
+  let obj = {};
+  for(let el of arr) {
+    if(!obj[el] === undefined) {
+      obj.el = 0;
+    } else {
+      obj.el++;
+    }
+  }
   return arr.sort((a, b) => {
     if(b - a > 0) return 1;
     if(b - a < 0) return -1;
